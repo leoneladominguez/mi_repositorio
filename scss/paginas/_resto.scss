@@ -1,0 +1,46 @@
+.restosintro{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.restosmapa{ 
+    font-size: 1rem;
+    font-weight: bold;
+}
+@keyframes efecto {
+    0%{opacity: 0.5;}
+    50%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
+.restoslistado-conteinter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.restoslistado-item{
+    width: $tamaño_listado_r;
+    height: $tamaño_listado_r;
+    margin: 1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.restoslistado-item:hover{
+    animation-name: efecto;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+.carousel{
+    width: 30%;
+}
+
+.restoslistado-img{
+    height: 100%;
+    width: 100%;
+}
+
+.restosmapa{
+    margin-top: 5%;
+}

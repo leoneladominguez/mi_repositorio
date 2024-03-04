@@ -1,0 +1,55 @@
+.indexintro{
+    font-size: 105%;
+}
+
+.indeximag-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.indeximag{
+    width: 100%;
+    height: 100%;
+}
+.indeximag-item1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+/*
+.indeximag-item2{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item3{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item4{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item5{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item6{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item7{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item8{
+    grid-column: ;
+    grid-row: ;
+}
+.indeximag-item9{
+    grid-column: ;
+    grid-row: ;
+}
+*/
+.indeximag-item10{
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}

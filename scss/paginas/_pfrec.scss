@@ -1,0 +1,17 @@
+.pfrec-pregunta{
+    display: inline-block;
+    font-size: 150%;
+    border-bottom: #000000 solid;
+}
+
+.pfrec-respuesta{
+}
+
+.accordion-button{
+    background-color: $color_fondo2;
+    border: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $color_fondo2;
+}

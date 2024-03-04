@@ -2,4 +2,19 @@
 // este archivo va  a tener todo el contenido principal/
 // para llamar a los hijos es @import ' header ( porque va en orden de lectura del codigo)//
 
-@import 'header'
+@import './variables/colores';
+@import './variables/variables';
+
+@import './principal';
+
+@import './header';
+@import './footer';
+
+
+@import './paginas/contactos';
+@import './paginas/index';
+@import './paginas/pfrec';
+@import './paginas/resto';
+@import './paginas/tcn';
+
+@import './mediaqueries';

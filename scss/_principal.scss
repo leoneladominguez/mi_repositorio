@@ -1,1 +1,29 @@
 // todo el codigo q  corresponde al main//
+
+body{
+    margin: 0%;
+    font-size: 16px;
+    color: $color_texto;
+    background-color: $color_fondo;
+    font-family: $texto_fuente;
+}
+
+#grilla{
+    display: grid;
+    grid-template-rows: 70px 55px 1fr 220px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'inicio'
+    'barra'
+    'contenido'
+    'pie';
+}
+
+main{
+    margin: 30px 6%;
+}
+
+.texto{
+    font-size: 100%;
+    margin: 0;
+}

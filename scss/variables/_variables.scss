@@ -1,0 +1,35 @@
+$texto_fuente: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+$logofinal_size: 5rem;
+
+/********HEADER********/
+
+/*SMALL*/
+$boxlogo-S: 3rem;
+$boxtitulo-S: 2rem;
+$logoposition-r-S: 0.3%;
+$logoposition-t-S: 0.3%;
+$tituloposition-r-S: 7rem;
+
+/*MEDIUM*/
+$boxlogo-M: 3rem;
+$boxtitulo-M: 3rem;
+$logoposition-l-M: 1%;
+$logoposition-t-M: 1%;
+
+/*BIG*/
+$boxlogo-B: 5rem;
+$boxtitulo-B: 4rem;
+$logoposition-r-B: 0;
+$logoposition-l-B: 1%;
+$logoposition-t-B: 1%;
+
+
+/********FORMATO PAGINA**********/
+
+$tamaño_columna_pagina1: 0px 60px 1fr 220px;
+$tamaño_columna_pagina2: 70px 55px 1fr 220px;
+$tamaño_columna_pagina3: 110px 55px 1fr 250px;
+
+/******RESTOS*******/
+$tamaño_listado_r: 8rem;
