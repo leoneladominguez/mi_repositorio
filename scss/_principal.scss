@@ -1,7 +1,6 @@
-// todo el codigo q  corresponde al main//
-
 body{
     margin: 0%;
+    height: 100vh;
     font-size: 16px;
     color: $color_texto;
     background-color: $color_fondo;
@@ -9,6 +8,7 @@ body{
 }
 
 #grilla{
+    height: 100%;
     display: grid;
     grid-template-rows: 70px 55px 1fr 220px;
     grid-template-columns: auto;

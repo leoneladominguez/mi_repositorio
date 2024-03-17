@@ -1,7 +1,6 @@
 @media (width <= 600px){
-
     #grilla{
-        grid-template-rows: $tamaño_columna_pagina1;
+        grid-template-rows: $altura_columna_pagina1;
     }
     
     .logoprincipal{
@@ -31,6 +30,7 @@
     .qr-item{
         display: none;
     }
+    
     .play-container{
         grid-area: qr;
         border-top: 0;
@@ -39,12 +39,23 @@
         font-size: 80%;
         margin: 0;
     }
+    .textofooter{
+        display: none;
+    }
+    .grillafinal{
+        grid-template-areas: 
+        'titulo titulo'
+        'sep1 sep1'
+        'info qr'
+        'sep2 sep2'
+        'redes redes';
+    }
 }
 
 @media ( 600px < width ) and (width < 950px){    
 
     #grilla{
-        grid-template-rows: $tamaño_columna_pagina2;
+        grid-template-rows: $altura_columna_pagina2;
     }
 
     .logoprincipal{
@@ -71,7 +82,7 @@
 @media (width >= 950px){
 
     #grilla{
-        grid-template-rows: $tamaño_columna_pagina3;
+        grid-template-rows: $altura_columna_pagina3;
     }
 
     .logoprincipal{

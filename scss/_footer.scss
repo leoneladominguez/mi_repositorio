@@ -1,10 +1,11 @@
 footer{
     grid-area: pie;
     background-color: $color_fondo2;
-
 }
+
 .grillafinal{
     display: grid;
+    height: 100%;
     grid-template-columns: 1fr 30%;
     grid-template-rows: 25% 1px 1fr 1px 1fr;
     grid-template-areas: 
@@ -15,11 +16,17 @@ footer{
     'redes play';
 }
 
+
 .menufinal-titulo{
     grid-area: titulo;
     margin-left: 15%;
     margin-top: 2%;
-    font-size: 100%;
+
+}
+
+.menufinal-info{
+    @extend .menufinal-titulo;
+    grid-area: info;
 }
 
 .sep1{
@@ -28,7 +35,6 @@ footer{
     margin: 0 5%;
     border-top: 1px solid black;
 }
-
 .sep2{
     grid-area: sep2;
     height: 1px;
@@ -36,11 +42,7 @@ footer{
     border-top: 1px solid black;
 }
 
-.menufinal-info{
-    grid-area: info;
-    margin-left: 15%;
-    margin-bottom: 2%;
-}
+
 .menufinal{
     grid-area: redes;
     margin-left: 15%;
@@ -50,11 +52,9 @@ footer{
 
 .logofinal{
     width: 20px;
-    
 }
 .menufinal-item{
     margin: 0px 5px;
-
 }
 .menufinal-item:hover{
     font-weight: bold;
