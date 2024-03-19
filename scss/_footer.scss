@@ -64,16 +64,12 @@ footer{
     .qr-container{
         grid-area: qr;
         @include center-center();
-        @include bloque-img($qrfinal_size, $qrfinal_size, 1px, black);
 
         .qr-item{
-            @include center-center();
-            width: 100%;
-            height: 100%;
+            @include bloque-img($qrfinal_size, $qrfinal_size, 1px, black);
             // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
 
             .logoqrfinal{
-                @include center-center();
                 width: 100%;
                 height: 100%;
                 // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
@@ -84,12 +80,9 @@ footer{
 
     .play-container{
         grid-area: play;
+        @include center-center();
 
         .play{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            @include center-center();
             // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
         }
         

@@ -1,8 +1,18 @@
-.accordion-button{
-    background-color: $color_fondo2;
-    border: 0;
+$pregunta: (
+    pf1: #cf5c3637,
+    pf2: #cf5c3684,
+    pf3: #cf5c36b2,
+    pf4: #CF5C36,
+) ;
+
+@each $name, $color in $pregunta {
+    .button-#{$name}{
+        background-color: $color;
+    }
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: $color_fondo2;
+@each $name, $color, $tamano in $pregunta {
+    .button-#{$name}:not(.collapsed){
+        background-color: $color;
+    }
 }
