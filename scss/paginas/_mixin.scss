@@ -1,0 +1,20 @@
+@mixin margen-footer($left, $top){
+    margin-left: $left;
+    margin-top: $top;
+}
+
+@mixin alineaciones($justi, $aling, $spacing){
+ diplay:flex;
+}
+
+@mixin bloque-img($alto, $ancho, $borde, $color){
+    height: $alto;
+    width: $ancho;
+    border: $borde solid $color;
+}
+
+@mixin center-center(){
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

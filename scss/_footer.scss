@@ -14,87 +14,86 @@ footer{
     'info qr'
     'sep2 sep2'
     'redes play';
+
+    .menufinal-titulo{
+        grid-area: titulo;
+        @include margen-footer(10vh, 2%);
+        text-align: start;
+    }
+
+    .menufinal-info{
+        grid-area: info;
+        @include margen-footer(10vh, 2%);
+    }
+
+    .sep1{
+        grid-area: sep1;
+        height: 1px;
+        margin: 0 5%;
+        border-top: 1px solid black;
+    }
+
+    .sep2{
+        grid-area: sep2;
+        height: 1px;
+        margin: 0 5%;
+        border-top: 1px solid black;
+    }
+
+    .menufinal{
+        grid-area: redes;
+        @include margen-footer(10vh, 2%);
+        display: flex;
+        align-items: center;
+
+        .menufinal-item{
+            margin: 0px 5px;
+
+            .logofinal{
+                @include bloque-img($logofinal_size, $logofinal_size, 1px, black);
+            }
+            .textofooter{
+                font-size: 60%;
+            }
+        }
+        .menufinal-item:hover{
+            font-weight: bold;
+        }
+    }
+
+    .qr-container{
+        grid-area: qr;
+        @include center-center();
+        @include bloque-img($qrfinal_size, $qrfinal_size, 1px, black);
+
+        .qr-item{
+            width: 100%;
+            height: 100%;
+            // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+
+            .logoqrfinal{
+                width: 100%;
+                height: 100%;
+                // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+            }
+            
+        }
+    }
+
+    .play-container{
+        grid-area: play;
+
+        .play{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            @include center-center();
+            // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+        }
+        
+        .playimg{
+            @include bloque-img($logofinal_size, $logofinal_size, 1px, black);
+        }
+    }
 }
-
-
-.menufinal-titulo{
-    grid-area: titulo;
-    margin-left: 15%;
-    margin-top: 2%;
-
-}
-
-.menufinal-info{
-    @extend .menufinal-titulo;
-    grid-area: info;
-}
-
-.sep1{
-    grid-area: sep1;
-    height: 1px;
-    margin: 0 5%;
-    border-top: 1px solid black;
-}
-.sep2{
-    grid-area: sep2;
-    height: 1px;
-    margin: 0 5%;
-    border-top: 1px solid black;
-}
-
-
-.menufinal{
-    grid-area: redes;
-    margin-left: 15%;
-    display: flex;
-    align-items: center;
-}
-
-.logofinal{
-    width: 20px;
-}
-.menufinal-item{
-    margin: 0px 5px;
-}
-.menufinal-item:hover{
-    font-weight: bold;
-}
-
-.qr-container{
-    grid-area: qr;
-    margin-right: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.qr-item{
-    width: $logofinal_size;
-    height: $logofinal_size;
-    border: 1px solid black;
-}
-
-
-.logoqrfinal{
-    width: 100%;
-    height: 100%;
-}
-
-.play-container{
-    grid-area: play;
-    margin-right: 40%;
-}
-
-
-.play{
-    width: auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.playimg{
-    height: 2rem;
-}
+//esto va comentado por las dudas esta en mixin//

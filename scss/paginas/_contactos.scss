@@ -1,18 +1,18 @@
 
 .contactosintro{
 }
-.contactos-comentario{
 
+.contactos-comentario{
+    textarea{
+        height: 5rem;
+    }
+    
+    textarea:focus{
+        transition: all 1s;
+        height: 10rem;
+    }
 }
 
 .comentario{
     
-}
-textarea{
-    height: 5rem;
-}
-
-textarea:focus{
-    transition: all 1s;
-    height: 10rem;
 }

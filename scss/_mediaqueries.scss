@@ -30,9 +30,13 @@
     .qr-item{
         display: none;
     }
-    
+
+    .qr-container{
+        display: none;
+    }
+
     .play-container{
-        grid-area: qr;
+        grid-area: play;
         border-top: 0;
     }
     .texto{
@@ -46,9 +50,9 @@
         grid-template-areas: 
         'titulo titulo'
         'sep1 sep1'
-        'info qr'
+        'info info'
         'sep2 sep2'
-        'redes redes';
+        'redes play';
     }
 }
 
