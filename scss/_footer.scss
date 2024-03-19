@@ -52,9 +52,6 @@ footer{
             .logofinal{
                 @include bloque-img($logofinal_size, $logofinal_size, 1px, black);
             }
-            .textofooter{
-                font-size: 60%;
-            }
         }
         .menufinal-item:hover{
             font-weight: bold;
@@ -89,6 +86,10 @@ footer{
         .playimg{
             @include bloque-img($logofinal_size, $logofinal_size, 1px, black);
         }
+    }
+
+    .textofooter{
+        font-size: 100%;
     }
 }
 //esto va comentado por las dudas esta en mixin//

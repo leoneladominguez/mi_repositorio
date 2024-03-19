@@ -172,9 +172,6 @@ footer {
   width: 4vh;
   border: 1px solid black;
 }
-.grillafinal .menufinal .menufinal-item .textofooter {
-  font-size: 60%;
-}
 .grillafinal .menufinal .menufinal-item:hover {
   font-weight: bold;
 }
@@ -203,6 +200,9 @@ footer {
   height: 4vh;
   width: 4vh;
   border: 1px solid black;
+}
+.grillafinal .textofooter {
+  font-size: 100%;
 }
 
 .contactos-comentario textarea {
