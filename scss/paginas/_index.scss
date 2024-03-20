@@ -22,3 +22,39 @@
     }
 }
 
+.ola{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    height: 150px;
+}
+.ola-item1{
+    width: 100%;
+    opacity: 40%;
+    @include despla (0%, 0, 20s, 1);
+}
+.ola-item2{
+    width: 100%;
+    opacity: 40%;
+    @include despla (-100%, 0, 20s, 1);
+}
+.ola-item3{
+    width: 100%;
+    opacity: 40%;
+    @include despla (0%, 1, 15s, 2);
+}
+.ola-item4{
+    width: 100%;
+    opacity: 40%;
+    @include despla (100%, 1, 15s, 2);
+}
+.ola-item5{
+    width: 100%;
+    opacity: 40%;
+    @include despla (0%, 0, 25s, 3);
+}
+.ola-item6{
+    width: 100%;
+    opacity: 40%;
+    @include despla (-100%, 0, 25s, 3);
+}
+

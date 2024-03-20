@@ -9,11 +9,7 @@
     font-weight: bold;
 }
 
-@keyframes efecto {
-    0%{opacity: 0.5;}
-    50%{opacity: 0.75;}
-    100%{opacity: 1;}
-}
+
 
 .restoslistado-conteinter{
     display: flex;
@@ -35,7 +31,7 @@
     }
     
     .restoslistado-item:hover{
-        animation-name: efecto;
+        animation-name: flash;
         animation-timing-function: ease-in;
         animation-duration: 1s;
     }

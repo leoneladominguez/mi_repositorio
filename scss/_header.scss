@@ -49,12 +49,7 @@ header{
     z-index: 15;
 }
 
-@keyframes rotarota {
-    0%{transform: rotatey(0deg);}
-    33%{transform: rotatey(90deg);}
-    66%{transform: rotatey(180deg);}
-    100%{transform: rotatey(359deg);}
-}
+
 
 .logoprincipal:hover{
     position: absolute;

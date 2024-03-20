@@ -18,3 +18,24 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin color-icon(){
+    color: aqua; 
+}
+
+@mixin despla ($x-init, $direcc, $time, $capa){
+    display: flex;
+    position: absolute;
+    left: $x-init;
+    z-index: $capa;
+
+    
+    @if $direcc == 0 {
+        animation-name: desplazamiento0;
+    }@if $direcc == 1 {
+        animation-name: desplazamiento1;
+    }    
+    animation-timing-function: ease-in;
+    animation-duration: $time;
+    animation-iteration-count: infinite;
+}

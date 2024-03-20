@@ -29,5 +29,5 @@ main{
 }
 
 .button{
-    background-color: $color_texto2;
+    background-image: radial-gradient(ellipse, $color_texto2, $color_fondo);
 }

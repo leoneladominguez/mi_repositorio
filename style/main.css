@@ -32,7 +32,7 @@ main {
 }
 
 .button {
-  background-color: #CF5C36;
+  background-image: radial-gradient(ellipse, #CF5C36, #ffe6cd);
 }
 
 header {
@@ -86,20 +86,6 @@ header {
   z-index: 15;
 }
 
-@keyframes rotarota {
-  0% {
-    transform: rotatey(0deg);
-  }
-  33% {
-    transform: rotatey(90deg);
-  }
-  66% {
-    transform: rotatey(180deg);
-  }
-  100% {
-    transform: rotatey(359deg);
-  }
-}
 .logoprincipal:hover {
   position: absolute;
   animation-name: rotarota;
@@ -170,10 +156,10 @@ footer {
 .grillafinal .menufinal .menufinal-item .logofinal {
   height: 4vh;
   width: 4vh;
-  border: 1px solid black;
+  border: 0 solid black;
 }
-.grillafinal .menufinal .menufinal-item:hover {
-  font-weight: bold;
+.grillafinal .menufinal .menufinal-item .logofinal:hover {
+  color: aqua;
 }
 .grillafinal .qr-container {
   grid-area: qr;
@@ -184,7 +170,7 @@ footer {
 .grillafinal .qr-container .qr-item {
   height: 5rem;
   width: 5rem;
-  border: 1px solid black;
+  border: 0 solid black;
 }
 .grillafinal .qr-container .qr-item .logoqrfinal {
   width: 100%;
@@ -199,12 +185,59 @@ footer {
 .grillafinal .play-container .playimg {
   height: 4vh;
   width: 4vh;
-  border: 1px solid black;
+  border: 0 solid black;
+}
+.grillafinal .play-container .playimg:hover {
+  color: aqua;
 }
 .grillafinal .textofooter {
   font-size: 100%;
 }
+.grillafinal .textofooter:hover {
+  color: aqua;
+}
 
+@keyframes flash {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotarota {
+  0% {
+    transform: rotatey(0deg);
+  }
+  33% {
+    transform: rotatey(90deg);
+  }
+  66% {
+    transform: rotatey(180deg);
+  }
+  100% {
+    transform: rotatey(359deg);
+  }
+}
+@keyframes desplazamiento0 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes desplazamiento1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .contactos-comentario textarea {
   height: 5rem;
 }
@@ -233,6 +266,90 @@ footer {
 .indeximag-conteiner .indeximag {
   width: 100%;
   height: 100%;
+}
+
+.ola {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  height: 150px;
+}
+
+.ola-item1 {
+  width: 100%;
+  opacity: 40%;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  z-index: 1;
+  animation-name: desplazamiento0;
+  animation-timing-function: ease-in;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.ola-item2 {
+  width: 100%;
+  opacity: 40%;
+  display: flex;
+  position: absolute;
+  left: -100%;
+  z-index: 1;
+  animation-name: desplazamiento0;
+  animation-timing-function: ease-in;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.ola-item3 {
+  width: 100%;
+  opacity: 40%;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  z-index: 2;
+  animation-name: desplazamiento1;
+  animation-timing-function: ease-in;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.ola-item4 {
+  width: 100%;
+  opacity: 40%;
+  display: flex;
+  position: absolute;
+  left: 100%;
+  z-index: 2;
+  animation-name: desplazamiento1;
+  animation-timing-function: ease-in;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.ola-item5 {
+  width: 100%;
+  opacity: 40%;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  z-index: 3;
+  animation-name: desplazamiento0;
+  animation-timing-function: ease-in;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+.ola-item6 {
+  width: 100%;
+  opacity: 40%;
+  display: flex;
+  position: absolute;
+  left: -100%;
+  z-index: 3;
+  animation-name: desplazamiento0;
+  animation-timing-function: ease-in;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
 }
 
 .button-pf1 {
@@ -278,17 +395,6 @@ footer {
   font-weight: bold;
 }
 
-@keyframes efecto {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .restoslistado-conteinter {
   display: flex;
   justify-content: space-around;
@@ -305,7 +411,7 @@ footer {
   width: 100%;
 }
 .restoslistado-conteinter .restoslistado-item:hover {
-  animation-name: efecto;
+  animation-name: flash;
   animation-timing-function: ease-in;
   animation-duration: 1s;
 }
@@ -378,6 +484,9 @@ footer {
   }
   .navbar-brand {
     display: none;
+  }
+  .textofooter {
+    font-size: 10%;
   }
 }
 @media (width >= 950px) {

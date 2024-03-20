@@ -50,11 +50,11 @@ footer{
             margin: 0px 5px;
 
             .logofinal{
-                @include bloque-img($logofinal_size, $logofinal_size, 1px, black);
+                @include bloque-img($logofinal_size, $logofinal_size, 0, black);
             }
-        }
-        .menufinal-item:hover{
-            font-weight: bold;
+            .logofinal:hover{
+                @include color-icon();
+            }
         }
     }
 
@@ -63,7 +63,7 @@ footer{
         @include center-center();
 
         .qr-item{
-            @include bloque-img($qrfinal_size, $qrfinal_size, 1px, black);
+            @include bloque-img($qrfinal_size, $qrfinal_size, 0, black);
             // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
 
             .logoqrfinal{
@@ -81,15 +81,20 @@ footer{
 
         .play{
             // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+        }        
+        .playimg{
+            @include bloque-img($logofinal_size, $logofinal_size, 0, black);
+        }
+        .playimg:hover{
+            @include color-icon();
         }
         
-        .playimg{
-            @include bloque-img($logofinal_size, $logofinal_size, 1px, black);
-        }
     }
 
     .textofooter{
         font-size: 100%;
     }
+    .textofooter:hover{
+        @include color-icon();
+    }
 }
-//esto va comentado por las dudas esta en mixin//

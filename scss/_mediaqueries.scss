@@ -54,6 +54,7 @@
         'sep2 sep2'
         'redes play';
     }
+    
 }
 
 @media ( 600px < width ) and (width < 950px){    
@@ -82,6 +83,9 @@
         display: none;
     }
 
+    .textofooter{
+        font-size: 10%;
+    }
 }
 
 @media (width >= 950px){
@@ -108,5 +112,6 @@
     .navbar-brand{
         display: none;
     }
+    
 }
 
