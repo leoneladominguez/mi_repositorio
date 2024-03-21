@@ -159,7 +159,7 @@ footer {
   border: 0 solid black;
 }
 .grillafinal .menufinal .menufinal-item .logofinal:hover {
-  color: aqua;
+  color: #ca00fd;
 }
 .grillafinal .qr-container {
   grid-area: qr;
@@ -188,13 +188,13 @@ footer {
   border: 0 solid black;
 }
 .grillafinal .play-container .playimg:hover {
-  color: aqua;
+  color: #ca00fd;
 }
 .grillafinal .textofooter {
   font-size: 100%;
 }
 .grillafinal .textofooter:hover {
-  color: aqua;
+  color: #ca00fd;
 }
 
 @keyframes flash {
@@ -240,6 +240,8 @@ footer {
 }
 .contactos-comentario textarea {
   height: 5rem;
+  box-shadow: 2px 2px 5px;
+  background-color: rgba(255, 255, 255, 0.952);
 }
 .contactos-comentario textarea:focus {
   transition: all 1s;

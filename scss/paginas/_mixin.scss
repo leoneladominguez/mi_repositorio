@@ -20,7 +20,7 @@
 }
 
 @mixin color-icon(){
-    color: aqua; 
+    color: $color_redes;
 }
 
 @mixin despla ($x-init, $direcc, $time, $capa){
