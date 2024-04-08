@@ -20,14 +20,19 @@
 }
 
 @mixin color-icon(){
-    color: aqua; 
+    color: $color_redes;
 }
 
-@mixin despla ($x-init, $direcc, $time, $capa){
+@mixin despla ($x-init, $direcc, $time, $ola-alto, $capa){
     display: flex;
-    position: absolute;
+    position: relative;
     left: $x-init;
-    z-index: $capa;
+    bottom: (calc($ola-alto*$capa));
+    margin: 0;
+    width: 100%;
+    opacity: $ola-opacity;
+
+
 
     
     @if $direcc == 0 {

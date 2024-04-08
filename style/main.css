@@ -5,6 +5,7 @@
 /********FORMATO PAGINA**********/
 /******RESTOS*******/
 /********FOOTER********/
+/********OLAS********/
 body {
   margin: 0%;
   height: 100vh;
@@ -33,6 +34,10 @@ main {
 
 .button {
   background-image: radial-gradient(ellipse, #CF5C36, #ffe6cd);
+}
+
+.menu {
+  justify-content: center;
 }
 
 header {
@@ -159,7 +164,7 @@ footer {
   border: 0 solid black;
 }
 .grillafinal .menufinal .menufinal-item .logofinal:hover {
-  color: aqua;
+  color: #ca00fd;
 }
 .grillafinal .qr-container {
   grid-area: qr;
@@ -188,13 +193,13 @@ footer {
   border: 0 solid black;
 }
 .grillafinal .play-container .playimg:hover {
-  color: aqua;
+  color: #ca00fd;
 }
 .grillafinal .textofooter {
   font-size: 100%;
 }
 .grillafinal .textofooter:hover {
-  color: aqua;
+  color: #ca00fd;
 }
 
 @keyframes flash {
@@ -240,6 +245,8 @@ footer {
 }
 .contactos-comentario textarea {
   height: 5rem;
+  box-shadow: 2px 2px 5px;
+  background-color: rgba(255, 255, 255, 0.952);
 }
 .contactos-comentario textarea:focus {
   transition: all 1s;
@@ -269,83 +276,82 @@ footer {
 }
 
 .ola {
-  margin-top: 15px;
-  margin-bottom: 0px;
   height: 150px;
+  overflow: hidden;
 }
-
-.ola-item1 {
-  width: 100%;
-  opacity: 40%;
+.ola .ola-item1 {
   display: flex;
-  position: absolute;
+  position: relative;
   left: 0%;
-  z-index: 1;
+  bottom: 0px;
+  margin: 0;
+  width: 100%;
+  opacity: 50%;
   animation-name: desplazamiento0;
   animation-timing-function: ease-in;
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
-
-.ola-item2 {
-  width: 100%;
-  opacity: 40%;
+.ola .ola-item2 {
   display: flex;
-  position: absolute;
+  position: relative;
   left: -100%;
-  z-index: 1;
+  bottom: 165px;
+  margin: 0;
+  width: 100%;
+  opacity: 50%;
   animation-name: desplazamiento0;
   animation-timing-function: ease-in;
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
-
-.ola-item3 {
-  width: 100%;
-  opacity: 40%;
+.ola .ola-item3 {
   display: flex;
-  position: absolute;
+  position: relative;
   left: 0%;
-  z-index: 2;
+  bottom: 330px;
+  margin: 0;
+  width: 100%;
+  opacity: 50%;
   animation-name: desplazamiento1;
   animation-timing-function: ease-in;
   animation-duration: 15s;
   animation-iteration-count: infinite;
 }
-
-.ola-item4 {
-  width: 100%;
-  opacity: 40%;
+.ola .ola-item4 {
   display: flex;
-  position: absolute;
+  position: relative;
   left: 100%;
-  z-index: 2;
+  bottom: 495px;
+  margin: 0;
+  width: 100%;
+  opacity: 50%;
   animation-name: desplazamiento1;
   animation-timing-function: ease-in;
   animation-duration: 15s;
   animation-iteration-count: infinite;
 }
-
-.ola-item5 {
-  width: 100%;
-  opacity: 40%;
+.ola .ola-item5 {
   display: flex;
-  position: absolute;
+  position: relative;
   left: 0%;
-  z-index: 3;
+  bottom: 660px;
+  margin: 0;
+  width: 100%;
+  opacity: 50%;
   animation-name: desplazamiento0;
   animation-timing-function: ease-in;
   animation-duration: 25s;
   animation-iteration-count: infinite;
 }
-
-.ola-item6 {
-  width: 100%;
-  opacity: 40%;
+.ola .ola-item6 {
   display: flex;
-  position: absolute;
+  position: relative;
   left: -100%;
-  z-index: 3;
+  bottom: 825px;
+  margin: 0;
+  width: 100%;
+  opacity: 50%;
   animation-name: desplazamiento0;
   animation-timing-function: ease-in;
   animation-duration: 25s;

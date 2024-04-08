@@ -5,11 +5,14 @@
 .contactos-comentario{
     textarea{
         height: 5rem;
+        box-shadow:2px 2px 5px;
+        background-color: $color_base;
     }
     
     textarea:focus{
         transition: all 1s;
         height: 10rem;
+    
     }
 }
 

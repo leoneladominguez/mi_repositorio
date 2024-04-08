@@ -64,12 +64,12 @@ footer{
 
         .qr-item{
             @include bloque-img($qrfinal_size, $qrfinal_size, 0, black);
-            // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+
 
             .logoqrfinal{
                 width: 100%;
                 height: 100%;
-                // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+
             }
             
         }
@@ -80,7 +80,7 @@ footer{
         @include center-center();
 
         .play{
-            // CREO QUE ACA TENGO QUE USAR MIXIN heigh width //
+
         }        
         .playimg{
             @include bloque-img($logofinal_size, $logofinal_size, 0, black);

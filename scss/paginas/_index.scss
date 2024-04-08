@@ -18,43 +18,30 @@
     .indeximag{
         width: 100%;
         height: 100%;
-        //CREO QUE ACA PUEDO VOLVER A USAR MIXIN//
     }
 }
 
 .ola{
-    margin-top: 15px;
-    margin-bottom: 0px;
-    height: 150px;
+    height: $ola-alto;
+    overflow: hidden;
+    .ola-item1{
+        @include despla (0%, 0, 20s, $ola-alto, 0);
+    }
+    .ola-item2{
+        @include despla (-100%, 0, 20s, $ola-alto + 15px, 1);
+    }
+    .ola-item3{
+        @include despla (0%, 1, 15s, $ola-alto + 15px, 2);
+    }
+    .ola-item4{
+        @include despla (100%, 1, 15s, $ola-alto + 15px, 3);
+    }
+    .ola-item5{
+        @include despla (0%, 0, 25s, $ola-alto + 15px, 4);
+    }
+    .ola-item6{
+        @include despla (-100%, 0, 25s, $ola-alto + 15px, 5);
+    }
 }
-.ola-item1{
-    width: 100%;
-    opacity: 40%;
-    @include despla (0%, 0, 20s, 1);
-}
-.ola-item2{
-    width: 100%;
-    opacity: 40%;
-    @include despla (-100%, 0, 20s, 1);
-}
-.ola-item3{
-    width: 100%;
-    opacity: 40%;
-    @include despla (0%, 1, 15s, 2);
-}
-.ola-item4{
-    width: 100%;
-    opacity: 40%;
-    @include despla (100%, 1, 15s, 2);
-}
-.ola-item5{
-    width: 100%;
-    opacity: 40%;
-    @include despla (0%, 0, 25s, 3);
-}
-.ola-item6{
-    width: 100%;
-    opacity: 40%;
-    @include despla (-100%, 0, 25s, 3);
-}
+
 
